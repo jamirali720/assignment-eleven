@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;  
+}
+.main {
+    width: 96%;
+    height: 90vh;
+    margin: auto;
+    background-image: url("../../../src/login.bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+}
+.login-box {
+    width: 500px;
+    height: 550px;
+    margin: auto; 
+    position: relative;
+    top: 18%;
+    left: 25%;
+    background-color: #24c2fc;
+    box-shadow:  0 0 5px 2px rgb(71, 255, 200);
+ 
+}
+@media only screen and (min-width: 480px) {
+   .login-box {
+      width: 380px;
+    }
+}
+  @media only screen and (min-width: 480px) {
+   .main {
+      width: 96%;
+    }
+  }
+#main-form {
+    padding-top: 50px;
+
+}
+#btn {
+    width: 100%;
+    margin-bottom: 20px;
+}
+p {
+    color: rgb(105, 33, 240);    
+}
+.logoutBtn {
+    width: 82%;
+    margin-left: 30px;
+}
+button {
+    background-color:#4658fc;
+    color: white;
+    padding: 5px;
+}
+hr {
+    color: rgb(11, 13, 14);
+    padding: 1px;
+}
+.or{
+    position: relative;
+    top: 28px;
+    left: 45%;
+    width: 400px;
+    color:rgb(243, 45, 45);
+}
