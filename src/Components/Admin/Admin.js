@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Admin = () => {
-    return (
-        <div>
-                i m adddmin 
-        </div>
-    );
+  return <div> 
+        
+       </div>;
 };
 
 export default Admin;
+
+

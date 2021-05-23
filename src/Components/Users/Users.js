@@ -4,7 +4,6 @@ import Sidebar from '../Sidebar/Sidebar';
 
 const Users = () => {
     const [userInfo, setUserInfo] = useState([])
-    const [deleteItem, setDeleteItem] = useState({})
 
     const [loggedInUser, setLoggedInUser] = useContext(authContext)
     useEffect (() =>  {
@@ -25,10 +24,10 @@ const Users = () => {
            method: 'DELETE',
        })
        .then(res => res.json())
-       .then(result => setDeleteItem(result))
+       .then(result =>  console.log(result))
     }
   
-    console.log(deleteItem)
+  
     return (
         <div className="row ml-auto">
         <div className="col-md-2">
