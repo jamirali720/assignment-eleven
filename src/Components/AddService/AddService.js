@@ -37,7 +37,7 @@ const AddService = () => {
                         <Sidebar></Sidebar>
                     </div>
                     <div className="col-md-10">
-                        <h1 className="text-primary my-4">Add A New Aervice </h1>
+                        <h1 className="text-primary my-4">Add A New Service </h1>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="bg-warning rounded-3">
 

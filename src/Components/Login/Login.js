@@ -58,13 +58,7 @@ const Login = () => {
         });
     }
 
-    const handleLogOut =() => {
-        firebase.auth().signOut().then(() => {
-            alert('sign out successfully')
-        }).catch((error) => {
-           console.log(error)
-          });
-    }
+ 
     const  handleGoogleSignIn =()=> {
         var provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithPopup(provider)
@@ -116,9 +110,7 @@ const Login = () => {
                             </div>
                     }
                     </div>
-                    <div  >
-                        <button className="logoutBtn" onClick={handleLogOut}> <span>Log Out</span></button>
-                    </div>
+                  
                     <div>
                         <p  className="or">OR</p>
                         <hr/>

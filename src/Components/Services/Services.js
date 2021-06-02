@@ -11,7 +11,7 @@ const Services = () => {
         .then(data => setServices(data))
     },[]);
     return (
-        <div className="container-fluid mr-auto">
+        <div className="container-fluid mr-auto shadow-lg pb-4 mb-4 rounded-3">
             <h1 className="text-center my-5"> Our Online Current Courses</h1>
             <div className="d-flex justify-content-space-between flex-wrap">
             {

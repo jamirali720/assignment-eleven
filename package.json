@@ -4,7 +4,10 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
+    "@material-ui/lab": "^4.0.0-alpha.58",
     "@react-icons/all-files": "^4.1.0",
+    "@stripe/react-stripe-js": "^1.4.1",
+    "@stripe/stripe-js": "^1.15.0",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
@@ -14,9 +17,12 @@
     "react-data-table-component-footer": "^6.12.0-beta.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
+    "react-modal": "^3.13.1",
     "react-private-route": "^1.1.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {CardElement, useStripe, useElements} from '@stripe/react-stripe-js';
 
-const CheckOutForm = () => {
+const CheckOutForm = ({ handlePaymentProcess}) => {
     const stripe = useStripe();
     const elements = useElements();
+    const [paymentError, setPaymentError] = useState(null);
+    const [paymentSuccess, setPaymentSuccess] = useState(null)
   
     const handleSubmit = async (event) => {
      
@@ -22,9 +24,12 @@ const CheckOutForm = () => {
       });
   
       if (error) {
-        console.log('[error]', error);
+       setPaymentError(error.message)
+       setPaymentSuccess(null)
       } else {
-        console.log('[PaymentMethod]', paymentMethod);
+          setPaymentSuccess(paymentMethod.id)
+          setPaymentError(null)
+          handlePaymentProcess(paymentMethod.id)
       }
     };
     return (

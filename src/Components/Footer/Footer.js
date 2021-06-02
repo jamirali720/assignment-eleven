@@ -81,7 +81,7 @@ const Footer = () => {
 
         <div className="text-center">
           <small className="text-secondary">
-            copyright {new Date().getFullYear()}
+            Copyright {new Date().getFullYear()}
             All Rights Reserved
           </small>
         </div>
