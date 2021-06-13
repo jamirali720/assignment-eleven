@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import{ authContext} from '../../App';
 
 const Navbar = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(authContext)
+    const [setLoggedInUser] = useContext(authContext)
     return (
         <div>
             <nav className="navbar navbar-expand-lg mr-auto sticky-top" style={{background: '#ECEDFB'}}>

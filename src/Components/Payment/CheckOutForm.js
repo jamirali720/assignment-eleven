@@ -32,6 +32,9 @@ const CheckOutForm = ({ handlePaymentProcess}) => {
           handlePaymentProcess(paymentMethod.id)
       }
     };
+    console.log(paymentSuccess)
+    console.log(paymentError)
+
     return (
         <form onSubmit={handleSubmit}>
         <CardElement />
