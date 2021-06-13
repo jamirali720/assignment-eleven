@@ -21,7 +21,7 @@ const CourseEnrolling = () => {
   
   
     useEffect(()=> {
-        fetch(`http://localhost:4000/getServiceById/${id}`)
+        fetch(`https://stormy-falls-19127.herokuapp.com/getServiceById/${id}`)
         .then(res => res.json())
         .then(userInfo =>setCourseInfo(userInfo))
     } ,[id])

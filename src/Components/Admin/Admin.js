@@ -8,7 +8,7 @@ const { register, handleSubmit ,  formState: { errors }} = useForm();
   const onSubmit = data => {
     const formData = new FormData();
            formData.append('email', data.email)
-            fetch("http://localhost:4000/addAdmin", {
+            fetch("https://stormy-falls-19127.herokuapp.com/addAdmin", {
               method: "POST",
 
               body: formData

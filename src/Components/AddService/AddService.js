@@ -18,7 +18,7 @@ const AddService = () => {
         formData.append('file', data.file[0])  
       
 
-        fetch('http://localhost:4000/addService', {
+        fetch('https://stormy-falls-19127.herokuapp.com/addService', {
             method: 'POST',
             body:formData
           

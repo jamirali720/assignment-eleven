@@ -7,13 +7,13 @@ const Management = () => {
   const history = useHistory();
 
     useEffect(() => {
-        fetch('http://localhost:4000/getAllOrders')
+        fetch('https://stormy-falls-19127.herokuapp.com/getAllOrders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
   
      const handleDelete=(id) => {
-     fetch(`http://localhost:4000/delete/${id}`, {
+     fetch(`https://stormy-falls-19127.herokuapp.com/delete/${id}`, {
          method: 'DELETE',
      })
      .then(res => res.json())

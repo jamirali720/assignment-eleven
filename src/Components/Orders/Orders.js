@@ -7,7 +7,7 @@ const Orders = () => {
 
   const [loggedInUser] = useContext(authContext);
   useEffect(() => {
-    fetch(`http://localhost:4000/getEnrollingData/?email=${loggedInUser.email}`, {
+    fetch(`https://stormy-falls-19127.herokuapp.com/getEnrollingData/?email=${loggedInUser.email}`, {
       method: "GET",
       headers: {
         authorization: `Bearer ${sessionStorage.getItem("token")}`,

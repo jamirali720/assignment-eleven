@@ -15,7 +15,7 @@ const Testimonial = () => {
         formData.append('file', data.file[0] )
         formData.append('description', data.description )
         
-        fetch("http://localhost:4000/addReview", {
+        fetch("https://stormy-falls-19127.herokuapp.com/addReview", {
           method: "POST",
           body: formData,
         })

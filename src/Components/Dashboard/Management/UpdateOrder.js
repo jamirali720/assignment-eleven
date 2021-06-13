@@ -11,7 +11,7 @@ const UpdateOrder = () => {
   
   
       useEffect(()=> {
-        fetch(`http://localhost:4000/getOrders/${id}`)
+        fetch(`https://stormy-falls-19127.herokuapp.com/getOrders/${id}`)
           .then((res) => res.json())
           .then((data) => setCourseInfo(data));
     } ,[id])
@@ -33,7 +33,7 @@ const UpdateOrder = () => {
              formData.append("price", updateInfo.price);
              formData.append("date", updateInfo.date);
 
-             fetch(`http://localhost:4000/update/${id}`, {
+             fetch(`https://stormy-falls-19127.herokuapp.com/update/${id}`, {
                  method: 'PATCH', 
               
                 body: formData

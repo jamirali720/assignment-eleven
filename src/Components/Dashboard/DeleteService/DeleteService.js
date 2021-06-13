@@ -5,14 +5,14 @@ const DeleteService = () => {
     const [services, setServices] = useState([]);
         
     useEffect(() => {
-          fetch("http://localhost:4000/allServices")
+          fetch("https://stormy-falls-19127.herokuapp.com/allServices")
             .then((res) => res.json())
             .then((data) => setServices(data));
         }, []);
 
     
        const handleDelete = (id) => {
-         fetch(`http://localhost:4000/serviceDelete/${id}`, {
+         fetch(`https://stormy-falls-19127.herokuapp.com/serviceDelete/${id}`, {
            method: "DELETE",
          })
            .then((res) => res.json())
